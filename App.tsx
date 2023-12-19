@@ -24,6 +24,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Button from './src/Button';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -33,6 +34,7 @@ function Section({children, title}: SectionProps): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
+      <Button />
       <Text
         style={[
           styles.sectionTitle,
